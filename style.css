@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: black;
+    padding: 15px 40px;
+    display: flex; /* Transforma o header em um container flexível */
+    
+    /* O SEGREDO: space-between joga o primeiro filho (logo) para a esquerda 
+       e o segundo filho (header-actions) para a direita */
+    justify-content: space-between; 
+    
+    align-items: center; /* Alinha o texto e os botões verticalmente no centro */
+}
+
+.logo p {
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+/* Estilização dos botões */
+.header-actions {
+    display: flex;
+    gap: 15px; /* Cria um espaço entre os dois botões */
+}
+
+input[type="button"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Coloca o H1 em cima e o Input embaixo */
+    align-items: center;    /* Centraliza os filhos horizontalmente */
+    justify-content: center;/* Centraliza verticalmente (se o main tiver altura) */
+    text-align: center;
+    padding: 100px 20px;    /* Espaçamento para o fundo lilás */
+    background-color: #dadbf1; 
+}
+
+main > input {
+    width: 100%;
+    max-width: 600px;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc; 
+    outline: none;
+}
+
+.grid-container {
+  display: grid;
+  /* Cria duas colunas de tamanhos iguais (1fr cada) */
+  grid-template-columns: 1fr 1fr; 
+  /* Espaço entre as linhas e colunas */
+  gap: 40px 60px; 
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content h3 {
+  margin-top: 0;
+  font-family: sans-serif;
+  font-size: 1.2rem;
+}
+
+.content p {
+  color: #444;
+  line-height: 1.5;
+}
+
+.content a {
+  text-decoration: none;
+  color: #4c5fd5;
+}
+.main-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 60px 20px;
+  font-family: sans-serif;
+}
+
+.footer-grid {
+  display: grid;
+  /* Cria 4 colunas flexíveis  */
+  grid-template-columns: repeat(4, 1fr) 1.5fr; 
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-column a {
+  display: block; /* Faz o link ocupar a linha toda */
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.footer-copyright {
+  align-self: end; /* Alinha o copyright na parte de baixo da coluna */
+  font-size: 0.8rem;
+}
+
+.contact-title {
+  margin-top: 30px;
+}
+
+
