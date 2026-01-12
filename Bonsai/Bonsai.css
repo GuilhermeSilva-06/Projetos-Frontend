@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding não aumente o tamanho da caixa */
+}
+
+header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #00b289;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Estilo para os botões do cabeçalho */
+.btn-header {
+    padding: 10px 20px;
+    border-radius: 5px; /* Bonsai usa bordas menos arredondadas no topo */
+    cursor: pointer;
+    font-weight: bold;
+    border: 1px solid #00b289;
+    margin-left: 10px;
+}
+
+#start-free {
+    background-color: #00b289;
+    color: white;
+}
+
+#log-in {
+    background-color: transparent;
+    color: #00b289;
+}
+
+/* Seção Principal */
+.sessao {
+    display: flex;
+    flex-direction: column; /* Título em cima, wrapper dos cards embaixo */
+    align-items: center;
+    padding: 60px 20px;
+    font-family: sans-serif;
+}
+
+.sessao h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+/* O "Pai" dos cards - Aqui acontece a mágica de ficarem lado a lado */
+.cards-wrapper {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; /* Para quebrar linha no celular */
+    justify-content: center;
+}
+
+/* Estilização individual do Card */
+.card {
+    border: 1px solid #e0e0e0;
+    padding: 40px;
+    width: 380px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo interno em coluna */
+    transition: 0.3s; /* Suaviza efeitos de hover */
+}
+
+.card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.valor h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #00b289;
+    margin-bottom: 20px;
+}
+
+/* Lista de benefícios */
+ul {
+    list-style: none; /* Remove as bolinhas pretas */
+    margin-bottom: 30px;
+    flex-grow: 1; /* Faz a lista ocupar o espaço disponível para alinhar os botões */
+}
+
+ul li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+    color: #4f4f4f;
+    /* Aqui você poderia adicionar um ícone de check verde no futuro */
+}
+
+/* Botão de dentro do Card */
+.btn-card {
+    width: 100%;
+    padding: 15px;
+    background-color: #00b289;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
